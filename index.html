@@ -65,7 +65,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="modal-btn" type="button">Заказать услугу</button>
+          <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
           </section>
 
         </div>
@@ -75,7 +75,7 @@
       <section class="advantages">
         <div class="container">
          
-          <h2 class="is-hidden">Наши преимущества</h2>
+          <h2 class="advantages-hidden">Наши преимущества</h2>
           <ul class="advantages-list list">
             <li class="advantages-list-item">
               <div class="container-svg">
@@ -442,8 +442,12 @@
 
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>X</button>
       
     </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
