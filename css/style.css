@@ -68,6 +68,11 @@ img {
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
+.modal-x {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+}
 
 .close-btn {
   position: absolute;
@@ -75,6 +80,10 @@ img {
   right: 8px;
   width: 30px;
   height: 30px;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -110,15 +119,20 @@ img {
   display: flex;
 }
 
-.navigation-element {
-  border: none;
-  display: flex;
-  background-color: #2196f3;
-  width: 49px;
+.navigation-list-item {
+  position: relative;
+}
+
+.navigation-list-item .current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -190%;
+  display: block;
+  width: 100%;
   height: 4px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .header .address {
@@ -325,7 +339,7 @@ img {
 }
 
 .direction .title {
-  /* margin-top: 94px; */
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 

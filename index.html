@@ -22,16 +22,16 @@
         <a class="logo-link link" href="index.html" aria-label="logo Webstudio"><span class="logo">Web</span>Studio</a>
         <ul class="navigation-list list">
           <li class="navigation-list-item">
-            <a class="navigation-list-link link" href="">Студия</a>
-            <div class="navigation-element"></div>
+            <a class="navigation-list-link link current " href="index.html" >Студия</a>
+            
           </li>
           <li class="navigation-list-item">
             <a class="navigation-list-link link" href="portfolio.html">Портфолио</a>
-          <div class="navigation-element"></div>
+         
           </li>
           <li class="navigation-list-item">
             <a class="navigation-list-link link" href="">Контакты</a>
-            <div class="navigation-element"></div>
+           
           </li>
         </ul>
       </nav>
@@ -65,7 +65,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="modal-btn"  data-modal-open>Заказать услугу</button>
           </section>
 
         </div>
@@ -444,7 +444,10 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="close-btn" data-modal-close>X</button>
+      <button type="button" class="close-btn" data-modal-close>
+        <svg class="modal-x">
+          <use href="./img/sprite.svg#modal-x"></use>
+        </svg></button>
       
     </div>
     </div>
